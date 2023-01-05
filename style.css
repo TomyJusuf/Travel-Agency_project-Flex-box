@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: rgb(223, 223, 223);
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -35,21 +38,76 @@ ul > .log {
 .container-card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   background-color: rgb(80, 145, 145);
   max-width: 1350px;
   height: 100%;
   margin: 100px auto;
-  padding-bottom: 10px;
-  gap: 10px;
-  column-gap: 10px;
-  padding-top: 10px;
-  align-items: center;
+  padding: 10px 10px;
+  gap: 0px 10px;
+}
+.container-card h1 {
+  /* display: flex; */
+  justify-content: center;
+  position: absolute;
 }
 
 .card {
+  margin-top: 50px;
   display: flex;
+  flex-direction: row;
+  flex: 1 0 250px;
   width: 250px;
   height: 350px;
-  background-color: rgb(235, 207, 116);
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.card > .title {
+  display: flex;
+  /* background-color: red; */
+  /* height: 50px; */
+  align-items: center;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+.card > .picture-box {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  width: 230px;
+  height: 150px;
+  align-self: flex-start;
+  border: 2px solid black;
+  margin-top: 0px;
+  /* align-items: center; */
+  justify-self: center;
+}
+.card h3 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.card button {
+  display: flex;
+  width: 150px;
+  height: 30px;
+  padding: 0 auto;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  border: none;
+  box-shadow: 3px -2px rgb(129, 114, 114);
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid rgb(54, 48, 48);
+  background-color: rgb(150, 159, 170);
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 20px;
 }
